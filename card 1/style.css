@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: #fed330;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-div {
+  padding: 5rem;
+}
+
+.main-div .center-div {
+  -webkit-box-shadow: -1px 15px 30px -10px black;
+          box-shadow: -1px 15px 30px -10px black;
+  border-radius: 16px;
+  background: #f7b731;
+}
+
+.main-div .center-div .card-main {
+  max-width: 25rem;
+}
+
+.main-div .center-div .card-main .img-div {
+  background-image: url(img2.jpg);
+  background: cover;
+  background-size: 100% 100%;
+  height: 250px;
+  display: block;
+  position: relative;
+  border-radius: 16px 16px 0 0;
+}
+
+.main-div .center-div .card-main figure img {
+  width: 550px;
+  height: 400px;
+  position: absolute;
+  top: -120px;
+  left: -29px;
+}
+
+.main-div .center-div .card-main .about-div {
+  background: #ecf0f1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main-div .center-div .card-main .about-div h3 {
+  color: #f7b731;
+  font-weight: 1rem;
+  text-transform: uppercase;
+}
+
+.main-div .center-div .card-main .about-div h1 {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.main-div .center-div .card-main .about-div p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  line-height: 25px;
+}
+
+.main-div .center-div .card-main .lower-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.main-div .center-div .card-main .lower-div div {
+  border-right: 2px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-div .center-div .card-main .lower-div div:last-child {
+  border-right: none;
+}
+/*# sourceMappingURL=style.css.map */
