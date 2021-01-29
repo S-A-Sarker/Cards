@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="img">
+            <!-- Swiper -->
+            <div class="swiper-container slider1">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/1.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/2.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/3.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/4.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/5.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/6.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/7.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/8.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/9.png)"
+                ></div>
+              </div>
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+          <div class="header">
+            <h1>Sarker Photography</h1>
+          </div>
+          <div class="text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+              quas accusantium qui, iure harum sint similique ratione odit? Ea,
+              aliquam.
+            </p>
+          </div>
+          <div class="slider2">
+            <!-- Swiper -->
+            <div class="swiper-container new-Slider">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/1.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/2.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/3.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/4.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/5.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/6.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/7.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/8.png)"
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="background-image: url(img/9.png)"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".slider1", {
+        effect: "flip",
+        effect: "cube",
+        grabCursor: true,
+        slidesPerView: "auto",
+
+        speed: 600,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 10,
+          shadowScale: 0.94,
+        },
+        autoplay: {
+          enabled: true,
+          delay: 1000, //for smooth rolling set delay: 1;
+        },
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".new-Slider", {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        slidesPerGroup: 2,
+        loop: true,
+        speed: 5000, //for smooth rolling enable this and set speed;
+        loopFillGroupWithBlank: false,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          enabled: true,
+          delay: 1, //for smooth rolling set delay: 1;
+        },
+      });
+    </script>
+  </body>
+</html>
