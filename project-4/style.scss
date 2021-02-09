@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+  font-size: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background-color: #184d5c;
+  .container {
+    .wrapper {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .card {
+        background-color: #ecf0f1;
+
+        max-width: 25rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: 7px 8px 17px 7px rgba(0, 0, 0, 0.45);
+        .cover-photo {
+          height: 120px;
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+        .main-card {
+          position: relative;
+          padding: 2rem 1.5rem 3rem 1.5rem;
+          text-align: center;
+          p {
+            text-align: end;
+            font-size: 1.5rem;
+          }
+          .profile-photo {
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 8rem;
+            height: 8rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 8rem;
+              display: block;
+            }
+          }
+          .text {
+            margin: 1rem 0;
+            h1 {
+              color: #353b48;
+              letter-spacing: 0.5px;
+            }
+            span {
+              font-size: 1.2rem;
+              color: #8e9aaf;
+            }
+          }
+          .follow {
+            display: flex;
+            margin: 1rem 0;
+            justify-content: space-around;
+            h1 {
+              color: #00a8ff;
+            }
+            span {
+              font-size: 1.2rem;
+              color: #8e9aaf;
+            }
+          }
+          .btn {
+            background: #ffc312;
+            padding: 0.8rem 0;
+            border-radius: 15px;
+            margin: 1rem 0;
+          }
+          .describe {
+            font-size: 1.2rem;
+            text-align: justify;
+            color: #8e9aaf;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
